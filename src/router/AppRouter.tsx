@@ -1,7 +1,15 @@
+import { Routes, Route } from "react-router-dom"
+import { HomePage } from "../ventas"
 
 
 export const AppRouter = () => {
   return (
-    <div>AppRouter</div>
+    <>
+        <Routes>
+            <Route>
+                <Route path="/" element={ <HomePage /> } />
+            </Route>
+        </Routes>
+    </>
   )
 }
